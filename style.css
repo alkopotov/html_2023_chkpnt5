@@ -2,11 +2,15 @@
 .bg-1 {
   background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/banner.jpeg);
   background-repeat: no-repeat;
-  background-position: 50% 0px, 50%;
-  background-attachment: fixed;
+  background-position: 50% 0px;
   background-size: cover;
   background-color: black;
   height: 100%;
+}
+@supports (background-attachment: fixed) {
+  .bg-1 {
+    background-attachment: fixed;
+  }
 }
 .bg-2{
   background-image: url(images/food5.jpeg);
@@ -204,8 +208,12 @@
   background-position: 50% 1vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   min-height: 600px;
+}
+@supports (background-attachment: fixed) {
+  .feedback {
+    background-attachment: fixed;
+  }
 }
 .feedback__banner {
     padding-top: 80px;
