@@ -7,7 +7,7 @@
   background-color: black;
   height: 100%;
 }
-@supports (background-attachment: fixed) {
+@media (min-width: 992px) {
   .bg-1 {
     background-attachment: fixed;
   }
@@ -210,7 +210,7 @@
   background-size: cover;
   min-height: 600px;
 }
-@supports (background-attachment: fixed) {
+@media (min-width: 992px) {
   .feedback {
     background-attachment: fixed;
   }
