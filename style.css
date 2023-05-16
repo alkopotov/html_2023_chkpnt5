@@ -22,6 +22,12 @@
   background-position: 50% 50%;
   background-size: cover;
 }
+.bg-4 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/food6.jpeg);
+}
+.bg-5 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/wine.jpeg);
+}
 .menu{
   position: absolute;
   left: calc(50% - 15px);
@@ -203,46 +209,35 @@
   font-family: Helvetica, sans-serif;
   font-weight: 400;
 }
+
 .feedback {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/wine.jpeg);
-  background-position: 50% 1vh;
+  min-height: 640px;
+}
+
+.feedback__banner {
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 600px;
+  background-position: 50% 10%;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-@media (min-width: 992px) {
-  .feedback {
-    background-attachment: fixed;
-  }
-}
-.feedback__banner {
-    padding-top: 80px;
-    padding-bottom: 100px;
-}
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .feedback__banner {
     padding-top: 250px;
     padding-bottom: 200px
   }
 }
-.left__arrow, .right__arrow {
-  opacity: 0;
-  width: 80px;
-}
-@media (min-width: 1200px) {
-  .left__arrow, .right__arrow {
-    opacity: 1
-  }
-}
+
 .feedback__text {
+  margin: auto;
+  width: 70%;
   font-size: 2.4rem;
-  margin-left: 10px;
   padding-top: 10px;
   line-height: 1.12;
 }
 @media (min-width: 1200px) {
   .feedback__text {
-    margin-left: 0;
+    margin: auto;
     font-size: 3.5rem;
   }
 }
